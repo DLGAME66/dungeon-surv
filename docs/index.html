@@ -17,7 +17,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 /* ── 通用组件 ── */
 .screen{display:none;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;padding:16px;gap:12px}
 .screen.active{display:flex}
-/* 主菜单 */
+/* 主菜�?*/
 #screen-menu{background:radial-gradient(ellipse at 50% 30%,#1a0840 0%,#080818 70%)}
 .game-title{font-size:clamp(26px,6vw,52px);font-weight:900;letter-spacing:4px;
   background:linear-gradient(135deg,#f0c040,#e04040,#a040f0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
@@ -49,7 +49,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .tag-green{background:rgba(64,192,128,.2);color:var(--green)}
 .tag-blue{background:rgba(64,144,240,.2);color:var(--blue)}
 .tag-purple{background:rgba(160,64,240,.2);color:var(--purple)}
-/* ── 主菜单 ── */
+/* ── 主菜�?── */
 .menu-version{font-size:11px;color:var(--muted);letter-spacing:1px;margin-top:-8px}
 .menu-stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .menu-stat{text-align:center;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:8px 16px;min-width:90px}
@@ -167,7 +167,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .equip-btn{background:linear-gradient(135deg,#f0c040,#d09020)}
 .chat-btn{background:linear-gradient(135deg,#4090f0,#2060c0)}
 .exit-btn{background:linear-gradient(135deg,#505060,#303040)}
-/* 里程碑提示 */
+/* 里程碑提�?*/
 .milestone{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:300;
   background:rgba(0,0,0,.92);border:2px solid var(--gold);border-radius:20px;padding:24px 32px;
   text-align:center;animation:milestoneAnim .5s ease-out;min-width:260px;max-width:min(360px,85vw)}
@@ -204,7 +204,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .req-ready{background:rgba(64,192,128,.2);color:var(--green)}
 .req-locked{background:rgba(100,100,100,.2);color:var(--muted)}
 .req-current{background:rgba(240,192,64,.2);color:var(--gold)}
-/* 道具栏 */
+/* 道具�?*/
 .inv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
 .inv-slot{display:flex;flex-direction:column;align-items:center;gap:3px;
   background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:8px;
@@ -213,17 +213,17 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .inv-icon{font-size:22px}
 .inv-name{font-size:10px;text-align:center;color:var(--gold);word-break:break-all;line-height:1.3}
 .inv-empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:20px;font-size:13px}
-/* 连接状态 */
+/* 连接状�?*/
 .conn-badge{position:fixed;top:10px;right:10px;display:flex;align-items:center;gap:5px;
   font-size:11px;padding:3px 10px;border-radius:20px;background:rgba(0,0,0,.7);
   backdrop-filter:blur(4px);z-index:200;pointer-events:none}
 .conn-dot{width:7px;height:7px;border-radius:50%}
 .conn-online{background:#40c080}.conn-offline{background:#e04040}
-/* 滚动条 */
+/* 滚动�?*/
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-/* 移动端 */
+/* 移动�?*/
 @media(max-width:560px){
   .hud-stats{font-size:11px}
   .dpad{grid-template-columns:repeat(3,48px);grid-template-rows:repeat(3,48px)}
@@ -242,42 +242,42 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <button class="lang-btn" onclick="switchLang('kr')" style="opacity:.5">KR</button>
   <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
 </div>
-<!-- 连接状态 -->
+<!-- 连接状�?-->
 <div class="conn-badge" id="connBadge">
   <div class="conn-dot conn-offline" id="connDot"></div>
-  <span id="connText">未连接</span>
+  <span id="connText">未连�?/span>
 </div>
 
-<!-- ═══ 主菜单 ═══ -->
+<!-- ══�?主菜�?══�?-->
 <div class="screen active" id="screen-menu">
   <div class="game-title">暗境生存</div>
   <div class="game-subtitle">DUNGEON SURVIVAL · v2.0</div>
-  <div class="menu-version">⚔ BOSS挑战系统 · 装备升级 · 多层地牢</div>
+  <div class="menu-version">�?BOSS挑战系统 · 装备升级 · 多层地牢</div>
   <div style="height:6px"></div>
   <div class="menu-stats">
     <div class="menu-stat"><div class="menu-stat-num">4</div><div class="menu-stat-label">职业</div></div>
     <div class="menu-stat"><div class="menu-stat-num">8</div><div class="menu-stat-label">BOSS</div></div>
     <div class="menu-stat"><div class="menu-stat-num">6</div><div class="menu-stat-label">装备等级</div></div>
-    <div class="menu-stat"><div class="menu-stat-num">∞</div><div class="menu-stat-label">无限楼层</div></div>
+    <div class="menu-stat"><div class="menu-stat-num">�?/div><div class="menu-stat-label">无限楼层</div></div>
   </div>
   <div style="height:4px"></div>
   <div class="card card-sm" style="max-width:360px">
-    <div class="tip" style="margin-bottom:10px">输入你的名字开始游戏</div>
-    <input class="input" id="input-name" placeholder="冒险者" maxlength="12" autocomplete="off">
+    <div class="tip" style="margin-bottom:10px">输入你的名字开始游�?/div>
+    <input class="input" id="input-name" placeholder="冒险�? maxlength="12" autocomplete="off">
   </div>
   <button class="btn btn-gold" id="btn-create">🛡 创建房间</button>
   <button class="btn btn-blue" id="btn-join">🚪 加入房间</button>
   <button class="btn btn-green" id="btn-joinlist">📋 房间列表</button>
   <button class="btn btn-purple" id="btn-offline">🎮 离线模式</button>
-  <div class="tip">支持电脑 / 手机 / 平板 · 联机 / 断网均可玩</div>
+  <div class="tip">支持电脑 / 手机 / 平板 · 联机 / 断网均可�?/div>
 </div>
 
-<!-- ═══ 加入房间 ═══ -->
+<!-- ══�?加入房间 ══�?-->
 <div class="screen" id="screen-join">
   <div class="card" style="max-width:420px;width:100%">
     <div class="modal-title">🚪 加入房间</div>
     <div style="margin-bottom:12px">
-      <div style="font-size:12px;color:var(--muted);margin-bottom:5px">房间码</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:5px">房间�?/div>
       <input class="input" id="input-roomcode" placeholder="输入6位房间码" maxlength="6"
         autocomplete="off" style="text-transform:uppercase;letter-spacing:5px;text-align:center;font-size:20px;font-weight:800">
     </div>
@@ -287,17 +287,17 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ 房间列表 ═══ -->
+<!-- ══�?房间列表 ══�?-->
 <div class="screen" id="screen-roomlist">
   <div class="card" style="max-width:420px;width:100%">
     <div class="modal-title">📋 可用房间</div>
-    <div class="room-list" id="room-list"><div class="tip">加载中...</div></div>
+    <div class="room-list" id="room-list"><div class="tip">加载�?..</div></div>
     <button class="btn btn-sm" id="btn-rl-refresh" style="width:100%;margin-top:8px;background:var(--panel2)">🔄 刷新房间</button>
     <button class="btn btn-sm" id="btn-rl-back" style="width:100%;margin-top:4px;background:var(--panel2)">返回</button>
   </div>
 </div>
 
-<!-- ═══ 大厅 ═══ -->
+<!-- ══�?大厅 ══�?-->
 <div class="screen" id="screen-lobby">
   <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center">
     <div style="font-size:18px;font-weight:900;color:var(--gold)" id="lobby-roomname">房间</div>
@@ -310,15 +310,15 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       <div class="card card-sm player-list">
         <div style="font-size:13px;font-weight:700;margin-bottom:8px">👥 玩家列表</div>
         <div id="lobby-players"></div>
-        <div class="tip" style="margin-top:8px">⚔️ 选择英雄 → 准备 → 等待开始</div>
+        <div class="tip" style="margin-top:8px">⚔️ 选择英雄 �?准备 �?等待开�?/div>
       </div>
       <!-- 聊天 -->
       <div class="card card-sm chat-panel" style="display:flex;flex-direction:column">
         <div style="font-size:13px;font-weight:700;margin-bottom:6px">💬 聊天</div>
         <div class="chat-box" id="lobby-chat"></div>
         <div class="chat-input-wrap">
-          <input class="input" id="lobby-chat-input" placeholder="说点什么..." maxlength="100" style="flex:1">
-          <button class="btn btn-sm" id="lobby-chat-send">发送</button>
+          <input class="input" id="lobby-chat-input" placeholder="说点什�?.." maxlength="100" style="flex:1">
+          <button class="btn btn-sm" id="lobby-chat-send">发�?/button>
         </div>
       </div>
     </div>
@@ -329,36 +329,36 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
         <div class="hero-card" data-hero="warrior"><div class="hero-icon">⚔️</div><div class="hero-name">战士</div><div class="hero-stats">生命130 · 攻击12 · 防御8</div><div class="hero-skill">🗡 重击</div></div>
         <div class="hero-card" data-hero="mage"><div class="hero-icon">🔮</div><div class="hero-name">法师</div><div class="hero-stats">生命80 · 攻击18 · 防御3</div><div class="hero-skill">🔥 火球</div></div>
         <div class="hero-card" data-hero="assassin"><div class="hero-icon">🗡</div><div class="hero-name">刺客</div><div class="hero-stats">生命90 · 攻击16 · 防御5</div><div class="hero-skill">💀 背刺</div></div>
-        <div class="hero-card" data-hero="healer"><div class="hero-icon">✨</div><div class="hero-name">牧师</div><div class="hero-stats">生命100 · 攻击8 · 防御6</div><div class="hero-skill">💚 治疗</div></div>
+        <div class="hero-card" data-hero="healer"><div class="hero-icon">�?/div><div class="hero-name">牧师</div><div class="hero-stats">生命100 · 攻击8 · 防御6</div><div class="hero-skill">💚 治疗</div></div>
       </div>
     </div>
     <!-- 操作 -->
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn btn-green btn-sm" id="btn-ready">✅ 准备</button>
-      <button class="btn btn-gold btn-sm" id="btn-start" disabled>▶ 开始游戏</button>
+      <button class="btn btn-green btn-sm" id="btn-ready">�?准备</button>
+      <button class="btn btn-gold btn-sm" id="btn-start" disabled>�?开始游�?/button>
       <button class="btn btn-sm" id="btn-leave-lobby" style="background:var(--panel2)">🚪 离开</button>
     </div>
     <div class="tip" id="lobby-tip">请先选择英雄，再点击准备</div>
   </div>
 </div>
 
-<!-- ═══ 游戏界面 ═══ -->
+<!-- ══�?游戏界面 ══�?-->
 <div class="screen" id="screen-game">
   <canvas id="game-canvas"></canvas>
   <div class="game-hud">
     <!-- 顶部 -->
     <div class="hud-top">
       <div class="hud-left">
-        <div class="hud-floor" id="hud-floor">第1层</div>
-        <div class="hud-mode mode-normal" id="hud-mode">🗺 探索中</div>
+        <div class="hud-floor" id="hud-floor">�?�?/div>
+        <div class="hud-mode mode-normal" id="hud-mode">🗺 探索�?/div>
       </div>
       <div class="hud-right">
         <div class="hud-players" id="hud-players"></div>
       </div>
     </div>
-    <!-- BOSS血条 -->
+    <!-- BOSS血�?-->
     <div id="boss-ui" style="display:none"></div>
-    <!-- 装备栏 -->
+    <!-- 装备�?-->
     <div class="hud-equip" id="hud-equip"></div>
     <!-- 游戏日志 -->
     <div class="game-log" id="game-log"></div>
@@ -369,19 +369,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
         <div class="hud-hp-bar"><div class="hud-hp-fill" id="hud-hp-fill" style="width:100%;background:linear-gradient(90deg,#e04040,#40c080)"></div></div>
         <span id="hud-gold-text">💰 0</span>
         <span id="hud-lv-text">Lv.1</span>
-        <span id="hud-exp-text">⚡ 0/50</span>
+        <span id="hud-exp-text">�?0/50</span>
         <span id="hud-key-text" style="display:none">🔑</span>
       </div>
       <div class="hud-controls">
         <div class="dpad">
-          <div></div><button class="dpad-btn" data-dx="0" data-dy="-1">▲</button><div></div>
+          <div></div><button class="dpad-btn" data-dx="0" data-dy="-1">�?/button><div></div>
           <button class="dpad-btn" data-dx="-1" data-dy="0">◀</button>
           <div class="dpad-center"></div>
-          <button class="dpad-btn" data-dx="1" data-dy="0">▶</button>
-          <div></div><button class="dpad-btn" data-dx="0" data-dy="1">▼</button><div></div>
+          <button class="dpad-btn" data-dx="1" data-dy="0">�?/button>
+          <div></div><button class="dpad-btn" data-dx="0" data-dy="1">�?/button><div></div>
         </div>
         <div class="action-btns">
-          <button class="action-btn skill-btn" id="btn-skill">⚔ 技能</button>
+          <button class="action-btn skill-btn" id="btn-skill">�?技�?/button>
           <button class="action-btn inv-btn" id="btn-inventory">🎒</button>
           <button class="action-btn equip-btn" id="btn-upgrade">🛡 装备</button>
           <button class="action-btn chat-btn" id="btn-chat-hud">💬</button>
@@ -392,12 +392,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ 里程碑弹窗 ═══ -->
+<!-- ══�?里程碑弹�?══�?-->
 <div class="modal-overlay" id="milestone-overlay">
   <div class="milestone" id="milestone-box"></div>
 </div>
 
-<!-- ═══ 装备升级弹窗 ═══ -->
+<!-- ══�?装备升级弹窗 ══�?-->
 <div class="modal-overlay" id="upgrade-modal">
   <div class="modal">
     <div class="modal-title">🛡 装备升级系统</div>
@@ -409,10 +409,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ 道具栏弹窗 ═══ -->
+<!-- ══�?道具栏弹�?══�?-->
 <div class="modal-overlay" id="inv-modal">
   <div class="modal">
-    <div class="modal-title">🎒 道具栏</div>
+    <div class="modal-title">🎒 道具�?/div>
     <div class="inv-grid" id="inv-grid"></div>
     <div class="modal-close">
       <button class="btn btn-sm" id="btn-inv-close" style="background:var(--panel2)">关闭</button>
@@ -420,10 +420,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ 技能弹窗 ═══ -->
+<!-- ══�?技能弹�?══�?-->
 <div class="modal-overlay" id="skill-modal">
   <div class="modal">
-    <div class="modal-title" id="skill-title">⚔ 技能</div>
+    <div class="modal-title" id="skill-title">�?技�?/div>
     <div id="skill-desc" style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:8px"></div>
     <div id="skill-tip" style="text-align:center;font-size:12px;color:var(--orange);margin-bottom:10px"></div>
     <div style="display:flex;gap:8px;justify-content:center">
@@ -433,7 +433,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ 游戏结束 ═══ -->
+<!-- ══�?游戏结束 ══�?-->
 <div class="modal-overlay" id="gameover-modal">
   <div class="modal" style="text-align:center">
     <div style="font-size:52px" id="gameover-icon">💀</div>
@@ -446,18 +446,15 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 <!-- Phaser -->
 <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
 <script>
-// ╔═══════════════════════════════════════════════════════════╗
-// ║          暗境生存 v2 · 客户端 (含装备+BOSS系统)         ║
-// ╚═══════════════════════════════════════════════════════════╝
-
+// ╔═══════════════════════════════════════════════════════════�?// �?         暗境生存 v2 · 客户�?(含装�?BOSS系统)         �?// ╚═══════════════════════════════════════════════════════════�?
 const STATE = {
-  playerId: null, roomId: null, playerName: '冒险者',
+  playerId: null, roomId: null, playerName: '冒险�?,
   hero: null, isHost: false, isOnline: false, isSkillMode: false,
   game: null, room: null, milestoneTimeout: null,
 };
 
 const SERVER_URL = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-  ? 'http://localhost:3001' : '';
+  ? 'https://dungeon-surv-server-production.up.railway.app' : '';
 
 // ─── Socket ─────────────────────────────────────────────────
 let socket = null;
@@ -465,7 +462,7 @@ function connectSocket() {
   if (!SERVER_URL) return;
   try {
     socket = io(SERVER_URL, { transports: ['websocket', 'polling'] });
-    socket.on('connect', () => { updateConn(true); console.log('[Socket] 已连接'); });
+    socket.on('connect', () => { updateConn(true); console.log('[Socket] 已连�?); });
     socket.on('disconnect', () => { updateConn(false); console.log('[Socket] 断开'); });
     socket.on('game_state', d => handleGameState(d));
     socket.on('game_start', d => handleGameStart(d));
@@ -514,7 +511,7 @@ function switchScreen(id) {
   document.getElementById(id).classList.add('active');
 }
 
-// ─── 主菜单 ─────────────────────────────────────────────────
+// ─── 主菜�?─────────────────────────────────────────────────
 document.getElementById('btn-create').onclick = () => startJoin('create');
 document.getElementById('btn-join').onclick = () => switchScreen('screen-join');
 document.getElementById('btn-joinlist').onclick = () => { loadRoomList(); switchScreen('screen-roomlist'); };
@@ -523,7 +520,7 @@ document.getElementById('btn-join-back').onclick = () => switchScreen('screen-me
 
 document.getElementById('btn-join-confirm').onclick = () => {
   const code = document.getElementById('input-roomcode').value.trim().toUpperCase();
-  const name = document.getElementById('input-name').value.trim() || '冒险者';
+  const name = document.getElementById('input-name').value.trim() || '冒险�?;
   if (!code) { showErr('请输入房间码'); return; }
   STATE.playerName = name;
   if (!socket?.connected) { showErr('服务器未连接，请使用离线模式'); return; }
@@ -539,7 +536,7 @@ function showErr(msg) {
 }
 
 function startJoin(mode) {
-  const name = document.getElementById('input-name').value.trim() || '冒险者';
+  const name = document.getElementById('input-name').value.trim() || '冒险�?;
   STATE.playerName = name;
   if (mode === 'create') {
     if (socket?.connected) {
@@ -571,7 +568,7 @@ function loadRoomList() {
   const list = document.getElementById('room-list');
   if (!socket?.connected) { list.innerHTML = '<div class="tip">服务器未连接</div>'; return; }
   fetch('/api/rooms').then(r => r.json()).then(data => {
-    if (!data.rooms.length) { list.innerHTML = '<div class="tip">暂无房间，创建一个吧！</div>'; return; }
+    if (!data.rooms.length) { list.innerHTML = '<div class="tip">暂无房间，创建一个吧�?/div>'; return; }
     list.innerHTML = data.rooms.map(r => `<div class="room-item" onclick="joinRoom('${r.id}')">
       <div class="room-name">${r.name}</div>
       <div class="room-players">👥 ${r.players}/${r.maxPlayers}</div>
@@ -579,7 +576,7 @@ function loadRoomList() {
   }).catch(() => { list.innerHTML = '<div class="tip">加载失败</div>'; });
 }
 function joinRoom(id) {
-  const name = document.getElementById('input-name').value.trim() || '冒险者';
+  const name = document.getElementById('input-name').value.trim() || '冒险�?;
   STATE.playerName = name;
   socket.emit('join_room', { roomCode: id, playerName: name }, res => {
     if (res.success) { STATE.playerId = res.playerId; STATE.isHost = false; handleRoomUpdate(res.room); switchScreen('screen-lobby'); }
@@ -595,7 +592,7 @@ function renderLobby() {
   document.getElementById('lobby-roomname').textContent = room.name;
   document.getElementById('lobby-roomcode').textContent = room.id;
   document.getElementById('lobby-playercount').textContent = room.players.length;
-  const tierNames = ['','⚒ 青铜','🥈 白银','🏅 黄金','💎 钻石','🌟 传说'];
+  const tierNames = ['','�?青铜','🥈 白银','🏅 黄金','💎 钻石','🌟 传说'];
   const tierColors = ['','#cd7f32','#c0c0c0','#ffd700','#00ffff','#c060ff'];
   document.getElementById('lobby-players').innerHTML = room.players.map(p => {
     const isMe = p.id === STATE.playerId;
@@ -605,19 +602,19 @@ function renderLobby() {
     return `<div class="player-item ${p.ready?'ready':''}">
       <div class="player-avatar">${getHeroEmoji(p.hero)}</div>
       <div class="player-info">
-        <div class="player-name">${p.name}${isMe?' (我)':''} ${p.id===room.hostId?'<span class="host-crown">👑</span>':''}</div>
+        <div class="player-name">${p.name}${isMe?' (�?':''} ${p.id===room.hostId?'<span class="host-crown">👑</span>':''}</div>
         <div class="player-level">Lv.${p.level} · ${p.hero||'未选择'}</div>
         ${tier>0?`<div class="player-tier" style="background:rgba(0,0,0,.2);color:${tColor}">${tName}</div>`:''}
       </div>
-      ${p.ready?'<span class="ready-badge">✅ 已准备</span>':'<span class="tag tag-blue" style="font-size:10px">⏳</span>'}
+      ${p.ready?'<span class="ready-badge">�?已准�?/span>':'<span class="tag tag-blue" style="font-size:10px">�?/span>'}
     </div>`;
   }).join('');
   const myP = room.players.find(p => p.id === STATE.playerId);
   const canStart = STATE.isHost && room.players.length>=1 && room.players.every(p=>p.ready&&p.hero);
   document.getElementById('btn-start').disabled = !canStart;
-  document.getElementById('btn-ready').textContent = myP?.ready ? '⏸ 取消准备' : '✅ 准备';
+  document.getElementById('btn-ready').textContent = myP?.ready ? '�?取消准备' : '�?准备';
   document.getElementById('lobby-tip').textContent = !myP?.hero ? '请先选择英雄，再准备'
-    : !myP?.ready ? '点击准备，等待房主开始' : '等待其他玩家准备...';
+    : !myP?.ready ? '点击准备，等待房主开�? : '等待其他玩家准备...';
 }
 
 // 英雄选择
@@ -675,26 +672,26 @@ function updateBossUI(room) {
     const b = room.bossData;
     const hpPct = Math.max(0, b.hp / b.maxHp * 100);
     const isEnraged = b.phase === 2;
-    modeEl.className = 'hud-mode mode-boss'; modeEl.textContent = '⚠️ BOSS战!';
+    modeEl.className = 'hud-mode mode-boss'; modeEl.textContent = '⚠️ BOSS�?';
     el.style.display = 'block';
     el.innerHTML = `<div class="boss-bar">
       <div class="boss-name">${b.icon || '👹'} ${b.name} ${isEnraged?'<span style="color:var(--orange)">[愤怒]</span>':''}</div>
       <div class="boss-bar-track"><div class="boss-bar-fill" style="width:${hpPct}%"></div></div>
       <div class="boss-hp-text">❤️ ${b.hp}/${b.maxHp} (${Math.floor(hpPct)}%)</div>
-      <div class="boss-phase">${isEnraged?'⚠️ 愤怒阶段 — 攻击+50%':'第1阶段'}</div>
-      <div class="boss-skills"><span class="boss-skill-tag">⚔ ${b.attack}攻</span><span class="boss-skill-tag">🛡 ${b.defense}防</span><span class="boss-skill-tag">💀 ${b.skill}</span></div>
+      <div class="boss-phase">${isEnraged?'⚠️ 愤怒阶�?�?攻击+50%':'�?阶段'}</div>
+      <div class="boss-skills"><span class="boss-skill-tag">�?${b.attack}�?/span><span class="boss-skill-tag">🛡 ${b.defense}�?/span><span class="boss-skill-tag">💀 ${b.skill}</span></div>
     </div>`;
   } else {
     el.style.display = 'none';
     modeEl.className = 'hud-mode mode-normal';
-    modeEl.textContent = room.currentFloor % 5 === 0 && room.currentFloor > 0 ? '⚔️ BOSS层' : '🗺 探索中';
+    modeEl.textContent = room.currentFloor % 5 === 0 && room.currentFloor > 0 ? '⚔️ BOSS�? : '🗺 探索�?;
   }
 }
 
 // ─── HUD ────────────────────────────────────────────────────
 const EQUIP_TIERS = [
   {tier:0,name:'初始装备',color:'#888888',atk:0,def:0,hp:0,icon:'⚔️'},
-  {tier:1,name:'⚒青铜装备',color:'#cd7f32',atk:5,def:3,hp:20,icon:'🛡'},
+  {tier:1,name:'⚒青铜装�?,color:'#cd7f32',atk:5,def:3,hp:20,icon:'🛡'},
   {tier:2,name:'🥈白银装备',color:'#c0c0c0',atk:10,def:7,hp:50,icon:'⚔️'},
   {tier:3,name:'🏅黄金装备',color:'#ffd700',atk:18,def:12,hp:100,icon:'🗡'},
   {tier:4,name:'💎钻石装备',color:'#00ffff',atk:28,def:20,hp:180,icon:'💎'},
@@ -703,7 +700,7 @@ const EQUIP_TIERS = [
 
 function updateHUD(room) {
   if (!room) return;
-  document.getElementById('hud-floor').textContent = `第${room.currentFloor}层`;
+  document.getElementById('hud-floor').textContent = `�?{room.currentFloor}层`;
   const me = room.players.find(p => p.id === STATE.playerId);
   if (me) {
     const pct = me.hp / me.maxHp * 100;
@@ -713,14 +710,13 @@ function updateHUD(room) {
     document.getElementById('hud-hp-text').textContent = `❤️ ${me.hp}/${me.maxHp}`;
     document.getElementById('hud-gold-text').textContent = `💰 ${me.gold}`;
     document.getElementById('hud-lv-text').textContent = `Lv.${me.level}`;
-    document.getElementById('hud-exp-text').textContent = `⚡ ${me.exp}/${me.level*50}`;
+    document.getElementById('hud-exp-text').textContent = `�?${me.exp}/${me.level*50}`;
     document.getElementById('hud-key-text').style.display = me.hasBossKey ? 'inline' : 'none';
-    // 装备栏
-    const tier = me.equipmentTier || 0;
+    // 装备�?    const tier = me.equipmentTier || 0;
     const tierData = EQUIP_TIERS[tier];
     document.getElementById('hud-equip').innerHTML = `
       <div class="equip-badge equip-tier-${tier}">${tierData.icon} ${tierData.name}</div>
-      <div class="equip-badge" style="background:rgba(200,50,50,.2);color:#e04040">⚔ ${me.attack}</div>
+      <div class="equip-badge" style="background:rgba(200,50,50,.2);color:#e04040">�?${me.attack}</div>
       <div class="equip-badge" style="background:rgba(64,144,240,.2);color:var(--blue)">🛡 ${me.defense}</div>
     `;
   }
@@ -731,7 +727,7 @@ function updateHUD(room) {
   }).join('');
 }
 
-// ─── 里程碑提示 ─────────────────────────────────────────────
+// ─── 里程碑提�?─────────────────────────────────────────────
 function showMilestone(icon, title, desc, color='var(--gold)') {
   const overlay = document.getElementById('milestone-overlay');
   const box = document.getElementById('milestone-box');
@@ -752,7 +748,7 @@ function showEquipmentUpgrade(data) {
   const me = STATE.room?.players.find(p => p.id === data.playerId);
   if (!me) return;
   const tier = EQUIP_TIERS[data.tier];
-  showMilestone(tier.icon, `🛡 装备升级！`, `${tier.name}<br>攻击力+${tier.atk} 防御力+${tier.def} 生命+${tier.hp}`, tier.color);
+  showMilestone(tier.icon, `🛡 装备升级！`, `${tier.name}<br>攻击�?${tier.atk} 防御�?${tier.def} 生命+${tier.hp}`, tier.color);
 }
 
 // ─── 装备升级面板 ───────────────────────────────────────────
@@ -765,14 +761,14 @@ function showUpgradePanel() {
   document.getElementById('upgrade-tier-list').innerHTML = EQUIP_TIERS.map((t, i) => {
     const req = reqLevels[i];
     let cls = 'tier-row', badge = '', btn = '';
-    if (i === tier) { cls += ' current'; badge = `<span class="tier-req req-current">已装备</span>`; }
-    else if (i < tier) { cls += ' locked'; badge = `<span class="tier-req req-locked">已超越</span>`; }
+    if (i === tier) { cls += ' current'; badge = `<span class="tier-req req-current">已装�?/span>`; }
+    else if (i < tier) { cls += ' locked'; badge = `<span class="tier-req req-locked">已超�?/span>`; }
     else if (i === tier + 1 && me.level >= req) { cls += ' available'; badge = `<span class="tier-req req-ready">可升级！</span>`; btn = `<button class="btn btn-sm btn-gold" onclick="doUpgrade()">升级</button>`; }
     else { cls += ' locked'; badge = `<span class="tier-req req-locked">需 Lv.${req}</span>`; }
     return `<div class="${cls}">
       <div class="tier-icon" style="font-size:28px">${t.icon}</div>
       <div class="tier-name" style="color:${t.color}">${t.name}</div>
-      <div class="tier-stats">⚔${t.atk} 🛡${t.def} ❤️${t.hp}</div>
+      <div class="tier-stats">�?{t.atk} 🛡${t.def} ❤️${t.hp}</div>
       ${badge} ${btn}
     </div>`;
   }).join('');
@@ -798,15 +794,15 @@ function offlineUpgradeEquip() {
   me.hp = me.maxHp;
   me.equipmentTier = ct + 1;
   const diff = { atk: newTier.atk - oldTier.atk, def: newTier.def - oldTier.def, hp: newTier.hp - oldTier.hp };
-  addGameLog(`🛡 ${me.name}装备升级！${oldTier.name} → ${newTier.name}`);
-  showMilestone(newTier.icon, `🛡 装备升级！`, `${newTier.name}<br>攻击力+${diff.atk} 防御力+${diff.def} 生命+${diff.hp}`, newTier.color);
+  addGameLog(`🛡 ${me.name}装备升级�?{oldTier.name} �?${newTier.name}`);
+  showMilestone(newTier.icon, `🛡 装备升级！`, `${newTier.name}<br>攻击�?${diff.atk} 防御�?${diff.def} 生命+${diff.hp}`, newTier.color);
   if (STATE.game) STATE.game.events.emit('room_update', room);
   updateHUD(room);
 }
 document.getElementById('btn-upgrade').onclick = showUpgradePanel;
 document.getElementById('btn-upgrade-close').onclick = () => document.getElementById('upgrade-modal').classList.remove('show');
 
-// ─── 道具栏 ─────────────────────────────────────────────────
+// ─── 道具�?─────────────────────────────────────────────────
 function renderInventory(items) {
   const grid = document.getElementById('inv-grid');
   if (!items?.length) { grid.innerHTML = '<div class="inv-empty">背包空空如也</div>'; return; }
@@ -816,11 +812,11 @@ function renderInventory(items) {
   </div>`).join('');
 }
 function getItemEmoji(type) {
-  return { potion:'🧪', sword:'🗡', shield:'🛡', coin:'💰', key:'🔑', elixir:'✨' }[type] || '📦';
+  return { potion:'🧪', sword:'🗡', shield:'🛡', coin:'💰', key:'🔑', elixir:'�? }[type] || '📦';
 }
 function useItem(idx) {
   if (socket?.connected) socket.emit('use_item', { itemIndex: idx });
-  else { const me = STATE.room?.players.find(p => p.id === STATE.playerId && p.alive); if (me && idx>=0 && idx<me.inventory.length) { const item = me.inventory.splice(idx,1)[0]; applyItemOffline(me, item); addGameLog(`${me.name}使用了${item.name}！`); if (STATE.game) STATE.game.events.emit('room_update', STATE.room); updateHUD(STATE.room); } }
+  else { const me = STATE.room?.players.find(p => p.id === STATE.playerId && p.alive); if (me && idx>=0 && idx<me.inventory.length) { const item = me.inventory.splice(idx,1)[0]; applyItemOffline(me, item); addGameLog(`${me.name}使用�?{item.name}！`); if (STATE.game) STATE.game.events.emit('room_update', STATE.room); updateHUD(STATE.room); } }
   document.getElementById('inv-modal').classList.remove('show');
 }
 function applyItemOffline(player, item) {
@@ -839,18 +835,18 @@ document.getElementById('btn-inventory').onclick = () => {
 };
 document.getElementById('btn-inv-close').onclick = () => document.getElementById('inv-modal').classList.remove('show');
 
-// ─── 技能 ───────────────────────────────────────────────────
+// ─── 技�?───────────────────────────────────────────────────
 const SKILL_DESC = {
   '重击':'单体200%伤害，可对BOSS使用',
-  '火球':'范围攻击，伤害150%',
-  '背刺':'单体350%暴击，伤害最高',
+  '火球':'范围攻击，伤�?50%',
+  '背刺':'单体350%暴击，伤害最�?,
   '治疗':'恢复50点HP，无目标要求',
 };
 document.getElementById('btn-skill').onclick = () => {
   const me = STATE.room?.players.find(p => p.id === STATE.playerId);
-  document.getElementById('skill-title').textContent = `⚔ ${me?.skill || '技能'}`;
+  document.getElementById('skill-title').textContent = `�?${me?.skill || '技�?}`;
   document.getElementById('skill-desc').textContent = SKILL_DESC[me?.skill] || '';
-  document.getElementById('skill-tip').textContent = me?.skill === '治疗' ? '✅ 无需选择目标，直接施放' : '⚠️ 点击地图上敌人位置施放';
+  document.getElementById('skill-tip').textContent = me?.skill === '治疗' ? '�?无需选择目标，直接施�? : '⚠️ 点击地图上敌人位置施�?;
   document.getElementById('skill-modal').classList.add('show');
 };
 document.getElementById('btn-skill-cancel').onclick = () => document.getElementById('skill-modal').classList.remove('show');
@@ -879,7 +875,7 @@ function showGameOver(data) {
   const modal = document.getElementById('gameover-modal');
   document.getElementById('gameover-icon').textContent = data.won ? '🏆' : '💀';
   document.getElementById('gameover-title').textContent = data.won ? '🎉 恭喜通关全关卡！' : '💀 全军覆没';
-  document.getElementById('gameover-content').innerHTML = `📍 到达层数：第${data.floor}层<br>👥 存活玩家：${data.alivePlayers}<br>⭐ 最高等级：Lv.${data.maxLevel}`;
+  document.getElementById('gameover-content').innerHTML = `📍 到达层数：第${data.floor}�?br>👥 存活玩家�?{data.alivePlayers}<br>�?最高等级：Lv.${data.maxLevel}`;
   modal.classList.add('show');
 }
 document.getElementById('btn-gameover-ok').onclick = () => {
@@ -913,7 +909,7 @@ function startOfflineGame() {
     const sp = offlineRoom.dungeon.spawns[i] || offlineRoom.dungeon.spawns[0];
     Object.assign(p, { position:{...sp}, hp: p.maxHp, alive:true, inventory:[], exp:0, gold:0, equipmentTier:0, hasBossKey:false });
   });
-  offlineRoom.chat.push({type:'system', text:'══════════ 游戏开始 ══════════'});
+  offlineRoom.chat.push({type:'system', text:'══════════ 游戏开�?══════════'});
   handleGameStart(offlineRoom);
 }
 
@@ -935,7 +931,7 @@ function generateDungeonOffline(floor, isBoss) {
   const spawns=[{x:sr.x+1,y:sr.y+1},{x:sr.x+sr.w-2,y:sr.y+1},{x:sr.x+1,y:sr.y+sr.h-2},{x:sr.x+sr.w-2,y:sr.y+sr.h-2}];
   const monsters=[];
   if (!isBoss) {
-    const types=[{t:'slime',n:'史莱姆',h:20,a:5,d:1,e:10,g:5},{t:'skeleton',n:'骷髅',h:35,a:8,d:3,e:20,g:10},{t:'orc',n:'兽人',h:60,a:12,d:5,e:35,g:20}];
+    const types=[{t:'slime',n:'史莱�?,h:20,a:5,d:1,e:10,g:5},{t:'skeleton',n:'骷髅',h:35,a:8,d:3,e:20,g:10},{t:'orc',n:'兽人',h:60,a:12,d:5,e:35,g:20}];
     for (let i=0;i<5+floor*3;i++) {
       const ri=1+Math.floor(Math.random()*(rooms.length-1)),r=rooms[Math.min(ri,rooms.length-1)];
       const mx=r.x+1+Math.floor(Math.random()*(r.w-2)),my=r.y+1+Math.floor(Math.random()*(r.h-2));
@@ -945,7 +941,7 @@ function generateDungeonOffline(floor, isBoss) {
     }
   }
   const items=[];
-  const itTypes=[{t:'potion',n:'生命药水',ef:'hp',v:30},{t:'potion',n:'高级药水',ef:'hp',v:60},{t:'sword',n:'铁剑',ef:'attack',v:5},{t:'shield',n:'盾牌',ef:'defense',v:3},{t:'coin',n:'金币袋',ef:'gold',v:50+floor*20},{t:'elixir',n:'经验药水',ef:'exp',v:50+floor*10}];
+  const itTypes=[{t:'potion',n:'生命药水',ef:'hp',v:30},{t:'potion',n:'高级药水',ef:'hp',v:60},{t:'sword',n:'铁剑',ef:'attack',v:5},{t:'shield',n:'盾牌',ef:'defense',v:3},{t:'coin',n:'金币�?,ef:'gold',v:50+floor*20},{t:'elixir',n:'经验药水',ef:'exp',v:50+floor*10}];
   for (let i=0;i<(isBoss?3:8+floor*2);i++) {
     const ri=Math.floor(Math.random()*rooms.length),r=rooms[ri];
     const ix=r.x+1+Math.floor(Math.random()*(r.w-2)),iy=r.y+1+Math.floor(Math.random()*(r.h-2));
@@ -969,8 +965,8 @@ function offlineUseSkill() {
   switch(me.skill) {
     case '重击': { const t=targets[0]; if(t){const dmg=Math.max(1,Math.floor(me.attack*2.2-(t.d||0)));t.h-=dmg;log=`${me.name}「重击」对${t.n}造成${dmg}伤害！`; if(t.h<=0){t.al=false;me.exp+=t.e||0;me.gold+=t.g||0;log+=` ${t.n}被击杀！`;}} break; }
     case '火球': targets.slice(0,4).forEach(t=>{const dmg=Math.max(1,Math.floor(me.attack*1.8-(t.d||0)));t.h-=dmg;if(t.h<=0){t.al=false;me.exp+=t.e||0;me.gold+=t.g||0;}}); log=`${me.name}「火球」范围攻击！`; break;
-    case '背刺': { const t=targets[0]; if(t){const dmg=Math.max(1,Math.floor(me.attack*3.5-(t.d||0)));t.h-=dmg;log=`${me.name}「背刺」暴击！对${t.n}造成${dmg}伤害！`; if(t.h<=0){t.al=false;me.exp+=t.e||0;me.gold+=t.g||0;}} break; }
-    case '治疗': const healed=Math.min(me.maxHp-me.hp,50);me.hp+=healed;log=`${me.name}「治疗」恢复${healed}HP！`; break;
+    case '背刺': { const t=targets[0]; if(t){const dmg=Math.max(1,Math.floor(me.attack*3.5-(t.d||0)));t.h-=dmg;log=`${me.name}「背刺」暴击！�?{t.n}造成${dmg}伤害！`; if(t.h<=0){t.al=false;me.exp+=t.e||0;me.gold+=t.g||0;}} break; }
+    case '治疗': const healed=Math.min(me.maxHp-me.hp,50);me.hp+=healed;log=`${me.name}「治疗」恢�?{healed}HP！`; break;
   }
   if(log) addGameLog(log);
   checkLevelUpOffline(me, room);
@@ -985,7 +981,7 @@ function checkLevelUpOffline(player, room) {
     player.exp -= need; player.level++;
     player.maxHp += 10; player.hp = Math.min(player.hp + 10, player.maxHp);
     player.attack += 2; player.defense += 1;
-    addGameLog(`🎉 ${player.name} 升级到 Lv.${player.level}！`);
+    addGameLog(`🎉 ${player.name} 升级�?Lv.${player.level}！`);
     // 装备自动升级
     const reqLevels = [0, 10, 50, 100, 150, 200];
     if (reqLevels.includes(player.level) && (player.equipmentTier||0) < 5) {
@@ -998,11 +994,11 @@ function checkLevelUpOffline(player, room) {
       player.hp = player.maxHp;
       player.equipmentTier = nextTier;
       const diff = { atk: newTier.atk - oldTier.atk, def: newTier.def - oldTier.def, hp: newTier.hp - oldTier.hp };
-      addGameLog(`🛡 ${player.name}达到${player.level}级，装备自动升级为【${newTier.name}】！`);
-      showMilestone(newTier.icon, `🛡 装备升级！`, `${newTier.name}<br>攻击力+${diff.atk} 防御力+${diff.def} 生命+${diff.hp}`, newTier.color);
+      addGameLog(`🛡 ${player.name}达到${player.level}级，装备自动升级为�?{newTier.name}】！`);
+      showMilestone(newTier.icon, `🛡 装备升级！`, `${newTier.name}<br>攻击�?${diff.atk} 防御�?${diff.def} 生命+${diff.hp}`, newTier.color);
     }
     if (player.level % 5 === 0) {
-      showMilestone('⚔️', `🎊 达到 ${player.level} 级！`, `解锁更强大的怪物挑战！<br>击败所有怪物后踏上楼梯进入下一层`, 'var(--orange)');
+      showMilestone('⚔️', `🎊 达到 ${player.level} 级！`, `解锁更强大的怪物挑战�?br>击败所有怪物后踏上楼梯进入下一层`, 'var(--orange)');
     }
   }
 }
@@ -1029,7 +1025,7 @@ function initPhaserGame(roomData) {
   // DPad
   document.querySelectorAll('.dpad-btn[data-dx]').forEach(btn => {
     const fire = () => {
-      if (STATE.room?.bossActive && STATE.room?.dungeon?.boss?.alive) { addGameLog('⚠️ 必须先击败BOSS！'); return; }
+      if (STATE.room?.bossActive && STATE.room?.dungeon?.boss?.alive) { addGameLog('⚠️ 必须先击败BOSS�?); return; }
       const dx=parseInt(btn.dataset.dx), dy=parseInt(btn.dataset.dy);
       if (socket?.connected) socket.emit('move', {dx, dy});
       else offlineMove(dx, dy);
@@ -1133,13 +1129,13 @@ class DungeonScene extends Phaser.Scene {
     const room=STATE.room; const me=room?.players.find(p=>p.id===STATE.playerId&&p.alive);
     const b=room?.dungeon?.boss; if (!me||!b||!b.al) return;
     const dmg=Math.max(1,me.attack-b.d); b.h-=dmg;
-    addGameLog(`${me.name}攻击「${b.n}」，造成${dmg}伤害！`);
+    addGameLog(`${me.name}攻击�?{b.n}」，造成${dmg}伤害！`);
     if (b.h<=0) { b.al=false; room.bossActive=false; me.exp+=b.e||0; me.gold+=b.g||0; me.hasBossKey=true;
-      addGameLog(`🏆【BOSS「${b.n}」被击杀！】获得${b.e||0}经验！`);
-      showMilestone('🏆','🏆 BOSS击杀！',`击败${b.n}！<br>+${b.e||0}经验 +${b.g||0}金币<br>🔑 获得BOSS钥匙！`,'var(--red)');
+      addGameLog(`🏆【BOSS�?{b.n}」被击杀！】获�?{b.e||0}经验！`);
+      showMilestone('🏆','🏆 BOSS击杀�?,`击败${b.n}�?br>+${b.e||0}经验 +${b.g||0}金币<br>🔑 获得BOSS钥匙！`,'var(--red)');
     } else {
       const bdmg=Math.max(1,b.a-me.defense); me.hp-=bdmg;
-      addGameLog(`「${b.n}」反击，造成${bdmg}伤害！`);
+      addGameLog(`�?{b.n}」反击，造成${bdmg}伤害！`);
       if (me.hp<=0) { me.hp=0; me.alive=false; addGameLog(`💀 ${me.name}倒下了！`); }
     }
     checkLevelUpOffline(me,room);
@@ -1150,7 +1146,7 @@ class DungeonScene extends Phaser.Scene {
 
 function offlineMove(dx, dy) {
   const room=STATE.room; const me=room?.players.find(p=>p.id===STATE.playerId&&p.alive);
-  if (!me||room.bossActive&&room.dungeon?.boss?.al) { if(room?.bossActive) addGameLog('⚠️ 必须先击败BOSS！'); return; }
+  if (!me||room.bossActive&&room.dungeon?.boss?.al) { if(room?.bossActive) addGameLog('⚠️ 必须先击败BOSS�?); return; }
   const nx=me.position.x+dx, ny=me.position.y+dy;
   if (nx<0||ny<0||nx>=20||ny>=20) return;
   const tile=room.dungeon.g[ny][nx]; if(tile==='wall') return;
@@ -1165,14 +1161,14 @@ function offlineMove(dx, dy) {
   if(mi!==-1) {
     const m=room.dungeon.monsters[mi]; const dmg=Math.max(1,me.attack-m.d); m.h-=dmg;
     addGameLog(`${me.name}攻击${m.n}，造成${dmg}伤害！`);
-    if(m.h<=0){m.al=false;me.exp+=m.e||0;me.gold+=m.g||0;addGameLog(`${m.n}被击杀！+${m.e||0}经验`);}
+    if(m.h<=0){m.al=false;me.exp+=m.e||0;me.gold+=m.g||0;addGameLog(`${m.n}被击杀�?${m.e||0}经验`);}
     checkLevelUpOffline(me,room);
     if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room); return;
   }
   // 移动
   me.position={x:nx,y:ny};
   const ii=room.dungeon.items.findIndex(i=>i.x===nx&&i.y===ny);
-  if(ii!==-1){const it=room.dungeon.items.splice(ii,1)[0];me.inventory.push(it);addGameLog(`${me.name}拾取了${it.n}！`);}
+  if(ii!==-1){const it=room.dungeon.items.splice(ii,1)[0];me.inventory.push(it);addGameLog(`${me.name}拾取�?{it.n}！`);}
   if(tile==='boss_altar'&&!room.bossActive) spawnBossOffline(room);
   if(tile==='stairs'&&room.dungeon.monsters.every(m=>!m.al)&&!room.bossActive) nextFloorOffline();
   if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room);
@@ -1192,9 +1188,9 @@ function spawnBossOffline(room) {
   const boss={...b, h:b.h+room.currentFloor*50, mh:b.h+room.currentFloor*50, a:b.a+room.currentFloor*5, d:b.d+room.currentFloor*3, x:lr.x+Math.floor(lr.w/2), y:lr.y+Math.floor(lr.h/2), al:true, ph:1};
   room.dungeon.boss=boss;
   room.bossActive=true;
-  addGameLog(`⚠️【警告】BOSS「${b.n}」出现！第${room.currentFloor}层守护者！`);
-  addGameLog(`⚔ BOSS技能：${b.s} | 生命${boss.h} | 攻击${boss.a} | 防御${boss.d}`);
-  showMilestone(boss.icon,'⚠️ BOSS出现！',`第${room.currentFloor}层守护者：${b.n}<br>技能：${b.s} | ❤️${boss.h} | ⚔${boss.a} | 🛡${boss.d}`,'var(--red)');
+  addGameLog(`⚠️【警告】BOSS�?{b.n}」出现！�?{room.currentFloor}层守护者！`);
+  addGameLog(`�?BOSS技能：${b.s} | 生命${boss.h} | 攻击${boss.a} | 防御${boss.d}`);
+  showMilestone(boss.icon,'⚠️ BOSS出现�?,`�?{room.currentFloor}层守护者：${b.n}<br>技能：${b.s} | ❤️${boss.h} | �?{boss.a} | 🛡${boss.d}`,'var(--red)');
   if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room); updateBossUI(room);
 }
 
@@ -1205,14 +1201,14 @@ function nextFloorOffline() {
   room.dungeon=generateDungeonOffline(room.currentFloor,isBoss);
   room.bossActive=false;
   room.players.forEach((p,i)=>{const sp=room.dungeon.spawns[i]||room.dungeon.spawns[0];p.position={...sp};});
-  addGameLog(`═══════════ 进入第${room.currentFloor}层 ═══════════`);
+  addGameLog(`══════════�?进入�?{room.currentFloor}�?═══════════`);
   if(isBoss) addGameLog(`⚠️ 这是BOSS层！击败BOSS才能继续前进！`);
   if(room.currentFloor%5!==0) addGameLog(`击杀所有怪物后踏上楼梯进入下一层`);
   if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room); updateBossUI(room);
-  if (isBoss) showMilestone('⚔️',`⚔️ 第${room.currentFloor}层 BOSS层！`,'击败BOSS可获得大量经验和金币！<br>同时解锁装备升级资格！','var(--red)');
+  if (isBoss) showMilestone('⚔️',`⚔️ �?{room.currentFloor}�?BOSS层！`,'击败BOSS可获得大量经验和金币�?br>同时解锁装备升级资格�?,'var(--red)');
 }
 
-// ─── 初始化 ───────────────────────────────────────────────
+// ─── 初始�?───────────────────────────────────────────────
 if (SERVER_URL) {
   const s=document.createElement('script');
   s.src=SERVER_URL+'/socket.io/socket.io.js';
@@ -1221,7 +1217,7 @@ if (SERVER_URL) {
 } else { updateConn(false); }
 setTimeout(()=>{ if(!socket?.connected) updateConn(false); },2500);
 
-function getHeroEmoji(hero){ return {warrior:'⚔️',mage:'🔮',assassin:'🗡',healer:'✨'}[hero]||'❓'; }
+function getHeroEmoji(hero){ return {warrior:'⚔️',mage:'🔮',assassin:'🗡',healer:'�?}[hero]||'�?; }
 function switchLang(lang) {
   const base = { en:'en/index.html', ja:'ja/index.html', kr:'kr/index.html' }[lang];
   if (base) window.location.href = base;

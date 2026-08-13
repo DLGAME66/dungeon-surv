@@ -224,17 +224,17 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <span id="connText">Offline</span>
 </div>
 
-<!-- ═══ MAIN MENU ═══ -->
+<!-- ══�?MAIN MENU ══�?-->
 <div class="screen active" id="screen-menu">
   <div class="game-title">Dungeon Survive</div>
   <div class="game-subtitle">DUNGEON SURVIVAL · v2.0</div>
-  <div class="menu-version">⚔ Boss Challenge · Equipment Upgrade · Infinite Dungeons</div>
+  <div class="menu-version">�?Boss Challenge · Equipment Upgrade · Infinite Dungeons</div>
   <div style="height:6px"></div>
   <div class="menu-stats">
     <div class="menu-stat"><div class="menu-stat-num">4</div><div class="menu-stat-label">Classes</div></div>
     <div class="menu-stat"><div class="menu-stat-num">8</div><div class="menu-stat-label">Bosses</div></div>
     <div class="menu-stat"><div class="menu-stat-num">6</div><div class="menu-stat-label">Equip Tiers</div></div>
-    <div class="menu-stat"><div class="menu-stat-num">∞</div><div class="menu-stat-label">Floors</div></div>
+    <div class="menu-stat"><div class="menu-stat-num">�?/div><div class="menu-stat-label">Floors</div></div>
   </div>
   <div style="height:4px"></div>
   <div class="card card-sm" style="max-width:360px">
@@ -248,7 +248,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   <div class="tip">Supports PC / Mobile / Tablet · Online & Offline</div>
 </div>
 
-<!-- ═══ JOIN ROOM ═══ -->
+<!-- ══�?JOIN ROOM ══�?-->
 <div class="screen" id="screen-join">
   <div class="card" style="max-width:420px;width:100%">
     <div class="modal-title">🚪 Join Room</div>
@@ -263,7 +263,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ ROOM LIST ═══ -->
+<!-- ══�?ROOM LIST ══�?-->
 <div class="screen" id="screen-roomlist">
   <div class="card" style="max-width:420px;width:100%">
     <div class="modal-title">📋 Available Rooms</div>
@@ -273,7 +273,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ LOBBY ═══ -->
+<!-- ══�?LOBBY ══�?-->
 <div class="screen" id="screen-lobby">
   <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center">
     <div style="font-size:18px;font-weight:900;color:var(--gold)" id="lobby-roomname">Room</div>
@@ -285,7 +285,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
       <div class="card card-sm player-list">
         <div style="font-size:13px;font-weight:700;margin-bottom:8px">👥 Players</div>
         <div id="lobby-players"></div>
-        <div class="tip" style="margin-top:8px">⚔️ Select Hero → Ready → Wait for Start</div>
+        <div class="tip" style="margin-top:8px">⚔️ Select Hero �?Ready �?Wait for Start</div>
       </div>
       <div class="card card-sm chat-panel" style="display:flex;flex-direction:column">
         <div style="font-size:13px;font-weight:700;margin-bottom:6px">💬 Chat</div>
@@ -302,19 +302,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
         <div class="hero-card" data-hero="warrior"><div class="hero-icon">⚔️</div><div class="hero-name">Warrior</div><div class="hero-stats">HP 130 · ATK 12 · DEF 8</div><div class="hero-skill">🗡 Power Strike</div></div>
         <div class="hero-card" data-hero="mage"><div class="hero-icon">🔮</div><div class="hero-name">Mage</div><div class="hero-stats">HP 80 · ATK 18 · DEF 3</div><div class="hero-skill">🔥 Fireball</div></div>
         <div class="hero-card" data-hero="assassin"><div class="hero-icon">🗡</div><div class="hero-name">Assassin</div><div class="hero-stats">HP 90 · ATK 16 · DEF 5</div><div class="hero-skill">💀 Backstab</div></div>
-        <div class="hero-card" data-hero="healer"><div class="hero-icon">✨</div><div class="hero-name">Healer</div><div class="hero-stats">HP 100 · ATK 8 · DEF 6</div><div class="hero-skill">💚 Heal</div></div>
+        <div class="hero-card" data-hero="healer"><div class="hero-icon">�?/div><div class="hero-name">Healer</div><div class="hero-stats">HP 100 · ATK 8 · DEF 6</div><div class="hero-skill">💚 Heal</div></div>
       </div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn btn-green btn-sm" id="btn-ready">✅ Ready</button>
-      <button class="btn btn-gold btn-sm" id="btn-start" disabled>▶ Start Game</button>
+      <button class="btn btn-green btn-sm" id="btn-ready">�?Ready</button>
+      <button class="btn btn-gold btn-sm" id="btn-start" disabled>�?Start Game</button>
       <button class="btn btn-sm" id="btn-leave-lobby" style="background:var(--panel2)">🚪 Leave</button>
     </div>
     <div class="tip" id="lobby-tip">Select a hero and click Ready</div>
   </div>
 </div>
 
-<!-- ═══ GAME SCREEN ═══ -->
+<!-- ══�?GAME SCREEN ══�?-->
 <div class="screen" id="screen-game">
   <canvas id="game-canvas"></canvas>
   <div class="game-hud">
@@ -336,19 +336,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
         <div class="hud-hp-bar"><div class="hud-hp-fill" id="hud-hp-fill" style="width:100%;background:linear-gradient(90deg,#e04040,#40c080)"></div></div>
         <span id="hud-gold-text">💰 0</span>
         <span id="hud-lv-text">Lv.1</span>
-        <span id="hud-exp-text">⚡ 0/50</span>
+        <span id="hud-exp-text">�?0/50</span>
         <span id="hud-key-text" style="display:none">🔑</span>
       </div>
       <div class="hud-controls">
         <div class="dpad">
-          <div></div><button class="dpad-btn" data-dx="0" data-dy="-1">▲</button><div></div>
+          <div></div><button class="dpad-btn" data-dx="0" data-dy="-1">�?/button><div></div>
           <button class="dpad-btn" data-dx="-1" data-dy="0">◀</button>
           <div class="dpad-center"></div>
-          <button class="dpad-btn" data-dx="1" data-dy="0">▶</button>
-          <div></div><button class="dpad-btn" data-dx="0" data-dy="1">▼</button><div></div>
+          <button class="dpad-btn" data-dx="1" data-dy="0">�?/button>
+          <div></div><button class="dpad-btn" data-dx="0" data-dy="1">�?/button><div></div>
         </div>
         <div class="action-btns">
-          <button class="action-btn skill-btn" id="btn-skill">⚔ Skill</button>
+          <button class="action-btn skill-btn" id="btn-skill">�?Skill</button>
           <button class="action-btn inv-btn" id="btn-inventory">🎒</button>
           <button class="action-btn equip-btn" id="btn-upgrade">🛡 Equip</button>
           <button class="action-btn chat-btn" id="btn-chat-hud">💬</button>
@@ -359,12 +359,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ MILESTONE ═══ -->
+<!-- ══�?MILESTONE ══�?-->
 <div class="modal-overlay" id="milestone-overlay">
   <div class="milestone" id="milestone-box"></div>
 </div>
 
-<!-- ═══ UPGRADE PANEL ═══ -->
+<!-- ══�?UPGRADE PANEL ══�?-->
 <div class="modal-overlay" id="upgrade-modal">
   <div class="modal">
     <div class="modal-title">🛡 Equipment Upgrade</div>
@@ -376,7 +376,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ INVENTORY ═══ -->
+<!-- ══�?INVENTORY ══�?-->
 <div class="modal-overlay" id="inv-modal">
   <div class="modal">
     <div class="modal-title">🎒 Inventory</div>
@@ -387,10 +387,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ SKILL MODAL ═══ -->
+<!-- ══�?SKILL MODAL ══�?-->
 <div class="modal-overlay" id="skill-modal">
   <div class="modal">
-    <div class="modal-title" id="skill-title">⚔ Skill</div>
+    <div class="modal-title" id="skill-title">�?Skill</div>
     <div id="skill-desc" style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:8px"></div>
     <div id="skill-tip" style="text-align:center;font-size:12px;color:var(--orange);margin-bottom:10px"></div>
     <div style="display:flex;gap:8px;justify-content:center">
@@ -400,7 +400,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-<!-- ═══ GAME OVER ═══ -->
+<!-- ══�?GAME OVER ══�?-->
 <div class="modal-overlay" id="gameover-modal">
   <div class="modal" style="text-align:center">
     <div style="font-size:52px" id="gameover-icon">💀</div>
@@ -426,7 +426,7 @@ const STATE = {
 };
 
 const SERVER_URL = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-  ? 'http://localhost:3001' : '';
+  ? 'https://dungeon-surv-server-production.up.railway.app' : '';
 
 let socket = null;
 function connectSocket() {
@@ -533,7 +533,7 @@ function renderLobby() {
   document.getElementById('lobby-roomname').textContent = room.name;
   document.getElementById('lobby-roomcode').textContent = room.id;
   document.getElementById('lobby-playercount').textContent = room.players.length;
-  const tierNames = ['','⚒ Bronze','🥈 Silver','🏅 Gold','💎 Diamond','🌟 Legendary'];
+  const tierNames = ['','�?Bronze','🥈 Silver','🏅 Gold','💎 Diamond','🌟 Legendary'];
   const tierColors = ['','#cd7f32','#c0c0c0','#ffd700','#00ffff','#c060ff'];
   document.getElementById('lobby-players').innerHTML = room.players.map(p => {
     const isMe = p.id === STATE.playerId;
@@ -547,13 +547,13 @@ function renderLobby() {
         <div class="player-level">Lv.${p.level} · ${p.hero||'Not selected'}</div>
         ${tier>0?`<div class="player-tier" style="background:rgba(0,0,0,.2);color:${tColor}">${tName}</div>`:''}
       </div>
-      ${p.ready?'<span class="ready-badge">✅ Ready</span>':'<span class="tag tag-blue" style="font-size:10px">⏳</span>'}
+      ${p.ready?'<span class="ready-badge">�?Ready</span>':'<span class="tag tag-blue" style="font-size:10px">�?/span>'}
     </div>`;
   }).join('');
   const myP = room.players.find(p => p.id === STATE.playerId);
   const canStart = STATE.isHost && room.players.length>=1 && room.players.every(p=>p.ready&&p.hero);
   document.getElementById('btn-start').disabled = !canStart;
-  document.getElementById('btn-ready').textContent = myP?.ready ? '⏸ Cancel Ready' : '✅ Ready';
+  document.getElementById('btn-ready').textContent = myP?.ready ? '�?Cancel Ready' : '�?Ready';
   document.getElementById('lobby-tip').textContent = !myP?.hero ? 'Select a hero first'
     : !myP?.ready ? 'Click Ready, wait for host to start' : 'Waiting for others...';
 }
@@ -604,8 +604,8 @@ function updateBossUI(room) {
       <div class="boss-name">${b.icon || '👹'} ${b.name} ${isEnraged?'<span style="color:var(--orange)">[ENRAGED]</span>':''}</div>
       <div class="boss-bar-track"><div class="boss-bar-fill" style="width:${hpPct}%"></div></div>
       <div class="boss-hp-text">❤️ ${b.hp}/${b.maxHp} (${Math.floor(hpPct)}%)</div>
-      <div class="boss-phase">${isEnraged?'⚠️ Enraged — ATK +50%':'Phase 1'}</div>
-      <div class="boss-skills"><span class="boss-skill-tag">⚔ ${b.attack} ATK</span><span class="boss-skill-tag">🛡 ${b.defense} DEF</span><span class="boss-skill-tag">💀 ${b.skill}</span></div>
+      <div class="boss-phase">${isEnraged?'⚠️ Enraged �?ATK +50%':'Phase 1'}</div>
+      <div class="boss-skills"><span class="boss-skill-tag">�?${b.attack} ATK</span><span class="boss-skill-tag">🛡 ${b.defense} DEF</span><span class="boss-skill-tag">💀 ${b.skill}</span></div>
     </div>`;
   } else {
     el.style.display = 'none';
@@ -617,7 +617,7 @@ function updateBossUI(room) {
 // HUD
 const EQUIP_TIERS = [
   {tier:0,name:'Starter',color:'#888888',atk:0,def:0,hp:0,icon:'⚔️'},
-  {tier:1,name:'⚒ Bronze',color:'#cd7f32',atk:5,def:3,hp:20,icon:'🛡'},
+  {tier:1,name:'�?Bronze',color:'#cd7f32',atk:5,def:3,hp:20,icon:'🛡'},
   {tier:2,name:'🥈 Silver',color:'#c0c0c0',atk:10,def:7,hp:50,icon:'⚔️'},
   {tier:3,name:'🏅 Gold',color:'#ffd700',atk:18,def:12,hp:100,icon:'🗡'},
   {tier:4,name:'💎 Diamond',color:'#00ffff',atk:28,def:20,hp:180,icon:'💎'},
@@ -635,13 +635,13 @@ function updateHUD(room) {
     document.getElementById('hud-hp-text').textContent = `❤️ ${me.hp}/${me.maxHp}`;
     document.getElementById('hud-gold-text').textContent = `💰 ${me.gold}`;
     document.getElementById('hud-lv-text').textContent = `Lv.${me.level}`;
-    document.getElementById('hud-exp-text').textContent = `⚡ ${me.exp}/${me.level*50}`;
+    document.getElementById('hud-exp-text').textContent = `�?${me.exp}/${me.level*50}`;
     document.getElementById('hud-key-text').style.display = me.hasBossKey ? 'inline' : 'none';
     const tier = me.equipmentTier || 0;
     const tierData = EQUIP_TIERS[tier];
     document.getElementById('hud-equip').innerHTML = `
       <div class="equip-badge equip-tier-${tier}">${tierData.icon} ${tierData.name}</div>
-      <div class="equip-badge" style="background:rgba(200,50,50,.2);color:#e04040">⚔ ${me.attack}</div>
+      <div class="equip-badge" style="background:rgba(200,50,50,.2);color:#e04040">�?${me.attack}</div>
       <div class="equip-badge" style="background:rgba(64,144,240,.2);color:var(--blue)">🛡 ${me.defense}</div>
     `;
   }
@@ -692,7 +692,7 @@ function showUpgradePanel() {
     return `<div class="${cls}">
       <div class="tier-icon" style="font-size:28px">${t.icon}</div>
       <div class="tier-name" style="color:${t.color}">${t.name}</div>
-      <div class="tier-stats">⚔${t.atk} 🛡${t.def} ❤️${t.hp}</div>
+      <div class="tier-stats">�?{t.atk} 🛡${t.def} ❤️${t.hp}</div>
       ${badge} ${btn}
     </div>`;
   }).join('');
@@ -718,7 +718,7 @@ function offlineUpgradeEquip() {
   me.hp = me.maxHp;
   me.equipmentTier = ct + 1;
   const diff = { atk: newTier.atk - oldTier.atk, def: newTier.def - oldTier.def, hp: newTier.hp - oldTier.hp };
-  addGameLog(`🛡 ${me.name} upgraded: ${oldTier.name} → ${newTier.name}`);
+  addGameLog(`🛡 ${me.name} upgraded: ${oldTier.name} �?${newTier.name}`);
   showMilestone(newTier.icon, `🛡 Equipment Upgraded!`, `${newTier.name}<br>ATK +${diff.atk} DEF +${diff.def} HP +${diff.hp}`, newTier.color);
   if (STATE.game) STATE.game.events.emit('room_update', room);
   updateHUD(room);
@@ -735,7 +735,7 @@ function renderInventory(items) {
     <div class="inv-name">${item.name}</div>
   </div>`).join('');
 }
-function getItemEmoji(type) { return { potion:'🧪', sword:'🗡', shield:'🛡', coin:'💰', key:'🔑', elixir:'✨' }[type] || '📦'; }
+function getItemEmoji(type) { return { potion:'🧪', sword:'🗡', shield:'🛡', coin:'💰', key:'🔑', elixir:'�? }[type] || '📦'; }
 function useItem(idx) {
   if (socket?.connected) socket.emit('use_item', { itemIndex: idx });
   else { const me = STATE.room?.players.find(p => p.id === STATE.playerId && p.alive); if (me && idx>=0 && idx<me.inventory.length) { const item = me.inventory.splice(idx,1)[0]; applyItemOffline(me, item); addGameLog(`${me.name} used ${item.name}!`); if (STATE.game) STATE.game.events.emit('room_update', STATE.room); updateHUD(STATE.room); } }
@@ -766,9 +766,9 @@ const SKILL_DESC = {
 };
 document.getElementById('btn-skill').onclick = () => {
   const me = STATE.room?.players.find(p => p.id === STATE.playerId);
-  document.getElementById('skill-title').textContent = `⚔ ${me?.skill || 'Skill'}`;
+  document.getElementById('skill-title').textContent = `�?${me?.skill || 'Skill'}`;
   document.getElementById('skill-desc').textContent = SKILL_DESC[me?.skill] || '';
-  document.getElementById('skill-tip').textContent = me?.skill === 'Heal' ? '✅ No target needed' : '⚠️ Click on enemy position to cast';
+  document.getElementById('skill-tip').textContent = me?.skill === 'Heal' ? '�?No target needed' : '⚠️ Click on enemy position to cast';
   document.getElementById('skill-modal').classList.add('show');
 };
 document.getElementById('btn-skill-cancel').onclick = () => document.getElementById('skill-modal').classList.remove('show');
@@ -788,7 +788,7 @@ function showGameOver(data) {
   const modal = document.getElementById('gameover-modal');
   document.getElementById('gameover-icon').textContent = data.won ? '🏆' : '💀';
   document.getElementById('gameover-title').textContent = data.won ? '🎉 All Floors Cleared!' : '💀 All Party Wiped';
-  document.getElementById('gameover-content').innerHTML = `📍 Floor Reached: ${data.floor}<br>👥 Survivors: ${data.alivePlayers}<br>⭐ Highest Level: Lv.${data.maxLevel}`;
+  document.getElementById('gameover-content').innerHTML = `📍 Floor Reached: ${data.floor}<br>👥 Survivors: ${data.alivePlayers}<br>�?Highest Level: Lv.${data.maxLevel}`;
   modal.classList.add('show');
 }
 document.getElementById('btn-gameover-ok').onclick = () => {
@@ -903,7 +903,7 @@ function checkLevelUpOffline(player, room) {
       player.hp = player.maxHp;
       player.equipmentTier = nextTier;
       const diff = { atk: newTier.atk - oldTier.atk, def: newTier.def - oldTier.def, hp: newTier.hp - oldTier.hp };
-      addGameLog(`🛡 ${player.name} reached ${player.level} — Equipment auto-upgraded to [${newTier.name}]!`);
+      addGameLog(`🛡 ${player.name} reached ${player.level} �?Equipment auto-upgraded to [${newTier.name}]!`);
       showMilestone(newTier.icon, `🛡 Equipment Upgraded!`, `${newTier.name}<br>ATK +${diff.atk} DEF +${diff.def} HP +${diff.hp}`, newTier.color);
     }
     if (player.level % 5 === 0) {
@@ -1026,7 +1026,7 @@ class DungeonScene extends Phaser.Scene {
     const room=STATE.room; const me=room?.players.find(p=>p.id===STATE.playerId&&p.alive);
     const b=room?.dungeon?.boss; if (!me||!b||!b.al) return;
     const dmg=Math.max(1,me.attack-b.d); b.h-=dmg;
-    addGameLog(`${me.name} attacks "${b.n}" — ${dmg} DMG!`);
+    addGameLog(`${me.name} attacks "${b.n}" �?${dmg} DMG!`);
     if (b.h<=0) { b.al=false; room.bossActive=false; me.exp+=b.e||0; me.gold+=b.g||0;
       addGameLog(`🏆 [BOSS "${b.n}" DEFEATED!] +${b.e||0} EXP!`);
       showMilestone('🏆','🏆 BOSS Defeated!',`${b.n} defeated!<br>+${b.e||0} EXP +${b.g||0} Gold<br>🔑 BOSS Key obtained!`,'var(--red)');
@@ -1081,8 +1081,8 @@ function spawnBossOffline(room) {
   room.dungeon.boss=boss;
   room.bossActive=true;
   addGameLog(`⚠️ [WARNING] BOSS "${b.n}" appeared! Floor ${room.currentFloor} guardian!`);
-  addGameLog(`⚔ BOSS Skill: ${b.s} | HP ${boss.h} | ATK ${boss.a} | DEF ${boss.d}`);
-  showMilestone(boss.icon,'⚠️ BOSS Appeared!',`Floor ${room.currentFloor} Guardian: ${b.n}<br>Skill: ${b.s} | ❤️${boss.h} | ⚔${boss.a} | 🛡${boss.d}`,'var(--red)');
+  addGameLog(`�?BOSS Skill: ${b.s} | HP ${boss.h} | ATK ${boss.a} | DEF ${boss.d}`);
+  showMilestone(boss.icon,'⚠️ BOSS Appeared!',`Floor ${room.currentFloor} Guardian: ${b.n}<br>Skill: ${b.s} | ❤️${boss.h} | �?{boss.a} | 🛡${boss.d}`,'var(--red)');
   if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room); updateBossUI(room);
 }
 
@@ -1093,11 +1093,11 @@ function nextFloorOffline() {
   room.dungeon=generateDungeonOffline(room.currentFloor,isBoss);
   room.bossActive=false;
   room.players.forEach((p,i)=>{const sp=room.dungeon.spawns[i]||room.dungeon.spawns[0];p.position={...sp};});
-  addGameLog(`═══════════ Enter Floor ${room.currentFloor} ═══════════`);
+  addGameLog(`══════════�?Enter Floor ${room.currentFloor} ═══════════`);
   if(isBoss) addGameLog(`⚠️ BOSS FLOOR! Defeat the boss to proceed!`);
   else addGameLog(`Defeat all monsters and take stairs to the next floor`);
   if(STATE.game) STATE.game.events.emit('room_update',room); updateHUD(room); updateBossUI(room);
-  if (isBoss) showMilestone('⚔️',`⚔️ Floor ${room.currentFloor} — BOSS FLOOR!`,'Defeat the boss for massive EXP and gold!<br>Also unlocks equipment upgrade!','var(--red)');
+  if (isBoss) showMilestone('⚔️',`⚔️ Floor ${room.currentFloor} �?BOSS FLOOR!`,'Defeat the boss for massive EXP and gold!<br>Also unlocks equipment upgrade!','var(--red)');
 }
 
 // Init
@@ -1109,7 +1109,7 @@ if (SERVER_URL) {
 } else { updateConn(false); }
 setTimeout(()=>{ if(!socket?.connected) updateConn(false); },2500);
 
-function getHeroEmoji(hero){ return {warrior:'⚔️',mage:'🔮',assassin:'🗡',healer:'✨'}[hero]||'❓'; }
+function getHeroEmoji(hero){ return {warrior:'⚔️',mage:'🔮',assassin:'🗡',healer:'�?}[hero]||'�?; }
 </script>
 </body>
 </html>
