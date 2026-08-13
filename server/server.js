@@ -8,6 +8,7 @@ const { Server } = require('socket.io');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
+app.use(express.json({ limit: '1mb' }));
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: { origin: '*', methods: ['GET', 'POST'] },
@@ -639,6 +640,59 @@ function getRoomState(room) {
 }
 
 // ─── REST API ────────────────────────────────────────────────
+// ─── Bug报告+反馈API (v3) ──────────────────────────────
+const bugReports = [];
+app.post('/api/bug_report', (req, res) => {
+  const report = {
+    id: 'BUG_' + Date.now() + '_' + Math.random().toString(36).slice(2,6).toUpperCase(),
+    ts: new Date().toISOString(),
+    version: req.body.version,
+    build: req.body.build,
+    auto: req.body.auto,
+    ua: req.body.ua,
+    count: req.body.logs ? req.body.logs.length : 0,
+    logs: (req.body.logs || []).slice(0, 10),
+  };
+  bugReports.push(report);
+  if (bugReports.length > 200) bugReports.splice(0, bugReports.length - 200);
+  console.log('[BUG] ' + report.id + ' auto=' + report.auto + ' count=' + report.count);
+  res.json({ success: true, id: report.id });
+});
+app.get('/api/bug_report/list', (req, res) => {
+  res.json({ reports: bugReports.slice(-20), total: bugReports.length });
+});
+
+const feedbacks = [];
+app.post('/api/feedback', (req, res) => {
+  const fb = {
+    id: 'FB_' + Date.now() + '_' + Math.random().toString(36).slice(2,6).toUpperCase(),
+    ts: new Date().toISOString(),
+    version: req.body.version,
+    build: req.body.build,
+    type: req.body.type,
+    star: req.body.star,
+    text: req.body.text,
+    mode: req.body.mode,
+    user: req.body.user,
+    floor: req.body.floor,
+    url: req.body.url,
+  };
+  feedbacks.push(fb);
+  if (feedbacks.length > 200) feedbacks.splice(0, feedbacks.length - 200);
+  console.log('[FB] ' + fb.id + ' star=' + fb.star + ' type=' + fb.type + ' text=' + String(fb.text||'').substring(0,40));
+  res.json({ success: true, id: fb.id });
+});
+app.get('/api/feedback/list', (req, res) => {
+  res.json({ feedbacks: feedbacks.slice(-20), total: feedbacks.length });
+});
+app.get('/api/feedback/stats', (req, res) => {
+  const stars = feedbacks.filter(function(f){return f.star > 0;}).map(function(f){return f.star;});
+  const avg = stars.length ? (stars.reduce(function(a,b){return a+b;},0) / stars.length).toFixed(1) : 'N/A';
+  const byType = {};
+  feedbacks.forEach(function(f){ byType[f.type] = (byType[f.type]||0)+1; });
+  res.json({ total: feedbacks.length, avgStar: avg, stars: stars.length, byType: byType });
+});
+
 app.use(express.static('.'));
 app.get('/api/rooms', (req, res) => {
   const list = Array.from(rooms.values()).filter(r => r.state === 'lobby')
@@ -653,7 +707,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok', rooms: rooms.size, ver
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
-  console.log(`\n🎮 暗境生存 v2.0 服务器运行中`);
+  console.log(`\n🎮 暗境生存 v3.0 服务器运行中`);
   console.log(`📡 端口: http://localhost:${PORT}`);
   console.log(`📋 房间列表: http://localhost:${PORT}/api/rooms`);
   console.log(`🛡 BOSS系统: 已启用（每5层）`);
