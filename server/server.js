@@ -640,6 +640,35 @@ function getRoomState(room) {
 }
 
 // ─── REST API ────────────────────────────────────────────────
+
+// ─── 访问统计 (v3.1) ────────────────────────────────────────
+const stats = {
+  pageViews: 0,
+  uniqueVisitors: new Set(),
+  firstSeen: Date.now(),
+  lastSeen: Date.now(),
+  daily: {},
+};
+app.post('/api/track', (req, res) => {
+  const uid = req.body && req.body.uid;
+  const lang = (req.body && req.body.lang) || 'unknown';
+  const ver = (req.body && req.body.v) || '?';
+  stats.pageViews++;
+  if (uid) stats.uniqueVisitors.add(uid);
+  const day = new Date().toISOString().substring(0, 10);
+  stats.daily[day] = (stats.daily[day] || 0) + 1;
+  stats.lastSeen = Date.now();
+  res.json({ ok: true, pv: stats.pageViews, uv: stats.uniqueVisitors.size });
+});
+app.get('/api/stats', (req, res) => {
+  res.json({
+    pageViews: stats.pageViews,
+    uniqueVisitors: stats.uniqueVisitors.size,
+    firstSeen: new Date(stats.firstSeen).toISOString(),
+    lastSeen: new Date(stats.lastSeen).toISOString(),
+    daily: stats.daily,
+  });
+});
 // ─── Bug报告+反馈API (v3) ──────────────────────────────
 const bugReports = [];
 app.post('/api/bug_report', (req, res) => {

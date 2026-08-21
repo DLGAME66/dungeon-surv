@@ -1261,6 +1261,27 @@ function switchLang(lang) {
   const base = { en:'en/index.html', ja:'ja/index.html', kr:'kr/index.html' }[lang];
   if (base) window.location.href = base;
 }
+
+// ─── 访问统计埋点 (v3.1) ─────────────────────────────────
+(function() {
+  try {
+    if (!SERVER_URL) return;
+    var uid = localStorage.getItem('DS_UID');
+    if (!uid) {
+      uid = 'U' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+      localStorage.setItem('DS_UID', uid);
+    }
+    var p = location.pathname;
+    var lang = p.indexOf('/en/') >= 0 ? 'en' : p.indexOf('/ja/') >= 0 ? 'ja' : p.indexOf('/kr/') >= 0 ? 'kr' : 'zh';
+    var ver = (typeof GAME_VERSION !== 'undefined') ? GAME_VERSION : '?';
+    fetch(SERVER_URL + '/api/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ uid: uid, lang: lang, v: ver })
+    }).catch(function() {});
+  } catch(e) {}
+})();
+
 </script>
 
 <div class="ad-overlay" id="ad-overlay"><div class="ad-card"><div class="ad-icon" id="ad-icon">🎬</div><div class="ad-title" id="ad-title">观看广告获得奖励</div><div class="ad-desc" id="ad-desc">观看完广告即可获得丰厚奖励！</div><div class="ad-progress"><div class="ad-bar" id="ad-bar"></div></div><div class="ad-countdown" id="ad-countdown">5</div><div class="ad-sub" id="ad-sub">秒后可关闭</div><div class="ad-skip" id="ad-skip">⏳ 等待中...</div><button class="ad-reward" id="ad-reward-btn" onclick="AD_SYSTEM.collectReward()">🎁 领取奖励！</button></div></div>
