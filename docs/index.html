@@ -492,8 +492,7 @@ const STATE = {
   game: null, room: null, milestoneTimeout: null,
 };
 
-const SERVER_URL = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-  ? 'https://dungeon-surv-server-production.up.railway.app' : '';
+const SERVER_URL = 'https://dungeon-surv-server-production.up.railway.app';
 
 // ─── Socket ─────────────────────────────────────────────────
 let socket = null;
