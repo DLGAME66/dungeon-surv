@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const file = path.join(__dirname, 'docs', 'index.html');
+const file = process.argv[2] || path.join(__dirname, 'docs', 'index.html');
 let html = fs.readFileSync(file, 'utf8');
 
 if (html.includes('AD_SYSTEM')) {
